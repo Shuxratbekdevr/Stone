@@ -1,0 +1,337 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(237, 237, 237);
+    
+}
+
+ul{
+    list-style: none;
+    
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+
+.container{
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.dFlex{
+    display: flex;
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.tranform{
+    transition: .3s;
+}
+.header{
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.13);
+    background: rgb(50, 50, 50);
+}
+
+.header__links{
+    margin-right: auto;
+}
+
+.header__links a {
+    display: block;
+    padding: 20px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.header__links a:hover {
+    color: rgb(199, 170, 139);
+    background: rgb(0, 0, 0);
+}
+.header__massenger li{
+    
+}
+.header__k {
+    padding: 20px 30px;
+    display: block;
+    border-left: solid 1px rgb(77, 77, 77);
+    border-right: solid 1px rgb(77, 77, 77);
+}
+.header__k  > svg path {
+   
+   fill: #fff;
+   color: #fff
+}
+
+
+.hero{
+    background-image: url('./img/hero.png');
+    min-height: 500px;
+    
+}
+.hero__content{
+   padding-top: 70px;
+   text-align: center;
+}
+
+.hero__title{
+       
+        font-size: 79px;
+
+        line-height: 66px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+}
+
+.hero__content hr{
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin: 36px  auto 18px;
+}
+
+.hero__content p {
+    font-family: Vollkorn;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero__work{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 10px 17px;
+    margin: 50px auto 0;
+    border: solid 2px #fff;
+}
+
+.hero__work:hover{
+    border-color: #000;
+    background-color: #000;
+    color: rgb(199, 170, 139);
+}
+
+
+.info{
+    background: #000;
+    background: rgb(199, 170, 139);
+    color: rgb(77, 77, 77);
+}
+
+.info ul {
+    gap: 22px;
+    align-items: center;
+}
+
+.info__card {
+    display: block;
+    text-align: center;
+    border-top: 1px solid  rgba(50, 50, 50, 0.13);
+    margin-top: 80px;
+    margin-bottom: 83px;
+    padding-top: 22px;
+    
+}
+.info__card h3{
+   
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.info__card img{
+    margin: 23px auto 40px;
+}
+
+.info__card p{
+    font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+
+.design{
+    position:sticky;
+    min-height: 400px;
+    display: grid;
+    place-items: center;
+}
+.design__bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+
+.design__content p {
+    color: rgb(199, 170, 139);
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/*  Team style */
+
+
+
+
+.team{
+    padding: 80px 0;
+    
+    
+}
+
+
+.team__content{
+    justify-content: space-around;
+    align-items: start;
+}
+.team__title{
+    color: rgb(77, 77, 77);
+    font-family: Roboto Condensed;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.team__lists{
+    gap: 20px;
+}
+
+.team__lists p {
+    color: rgb(77, 77, 77);
+font-family: Roboto Condensed;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: left;
+margin-top: 10px;
+}
+.team__set{
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/* test styling */
+
+.test{
+   padding: 80px 0;
+   text-align: center;
+   background: rgb(247, 247, 247);
+}
+
+
+.test__title {
+    color: rgba(50, 50, 50, 0.36);
+    font-family: Roboto Condensed;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+}
+.test__content{
+    gap: 31px;
+    justify-content: space-evenly;
+}
+.test__content div{
+    max-width:  360px;
+}
+.test__content p {
+    text-align: center;
+    color: rgb(77, 77, 77);
+font-family: Vollkorn;
+font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.test__content a{
+    color: rgb(199, 170, 139);
+font-family: Roboto Condensed;
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+}
+
+.footer{
+    background: rgb(50, 50, 50);
+}
+
+.footer__content {
+    min-height: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__content p {
+    color: rgb(133, 133, 133);
+    font-family: Roboto Condensed;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.footer__content a{
+    color: rgb(199, 170, 139);
+font-family: Roboto Condensed;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+
+padding: 10px 75px;
+border: 1px solid rgb(199, 170, 139);
+transition: .3s;
+    
+}
+
+.footer__content a:hover{
+    border:1px solid #000;
+    background-color: #000;
+    color: rgb(199, 170, 139);
+}
